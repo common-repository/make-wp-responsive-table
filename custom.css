@@ -1,0 +1,33 @@
+@media screen and (max-width: 600px) {
+  /* Rules for screens with a maximum width of 600px */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  /* Sets the table width to 100% of its container and collapses the table borders */
+
+  tr:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  /* Sets the background color of even rows to #f0f0f0 */
+
+  /* Sets the font weight to bold and font size to 1.3em for the first column cells */
+tr td:first-child {
+    font-size: 1.1em;
+  }
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+  /* Inserts the value of the 'data-th' attribute as content before the table cell's content, displays it as a block element, and centers the text horizontally */
+}
+
+  td {
+    border: 1px solid #d6d6d6;
+    padding: 8px;
+	text-align: center
+  }
+  /* Sets a 1px solid black border around each table cell and adds padding of 8px */
+}
